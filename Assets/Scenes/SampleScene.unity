@@ -159,14 +159,20 @@ MonoBehaviour:
   walkSpeed: 10
   sprintSpeed: 20
   groundDrag: 0
-  airMultiplier: 1
-  jumpForce: 5
-  jumpCooldown: 2
-  jumpForceMode: 1
-  rollMultiplier: 1
-  rollForce: 50
-  rollCooldown: 1.2
-  rollForceMode: 0
+  jumpActionModel:
+    actionMultiplier: 1
+    actionForce: 10
+    actionCooldown: 2
+    actionForceMode: 1
+    readyToAction: 1
+    input: 0
+  rollActionModel:
+    actionMultiplier: 1
+    actionForce: 50
+    actionCooldown: 1.2
+    actionForceMode: 0
+    readyToAction: 1
+    input: 0
 --- !u!95 &146481177
 Animator:
   serializedVersion: 4
@@ -236,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45beec97d8b04b449cc0c455554c830, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.71
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45beec97d8b04b449cc0c455554c830, type: 3}
       propertyPath: m_LocalPosition.y
@@ -244,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45beec97d8b04b449cc0c455554c830, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.484
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a45beec97d8b04b449cc0c455554c830, type: 3}
       propertyPath: m_LocalRotation.w
